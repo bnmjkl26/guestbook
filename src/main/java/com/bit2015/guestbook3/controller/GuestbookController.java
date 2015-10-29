@@ -14,7 +14,6 @@ import com.bit2015.guestbook3.vo.GuestbookVo;
 
 @Controller
 public class GuestbookController {
-	
 	@Autowired
 	GuestbookDao dao;
 
