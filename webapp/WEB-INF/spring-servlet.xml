@@ -8,6 +8,12 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd"
 	xmlns:mvc="http://www.springframework.org/schema/mvc">
 
+	<!-- 서블릿 컨테이너의 디폴트 서블릿 위임 핸들러 -->
+	<mvc:default-servlet-handler/>
+	
+	<!-- validator, conversionService, messageConverter를 자동으로 등록 -->
+	<mvc:annotation-driven />
+	
 	<context:annotation-config />
 	<context:component-scan base-package="com.bit2015.guestbook3" />
 
